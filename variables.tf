@@ -1,8 +1,16 @@
 variable "aws_s3_bucket_data" {
   description = "Specify AWS region, Bucket name prefix and Bucket count"
   default = {
-    region : "eu-west-2",
-    bucket-name : "myexample-bucket",
-    bucket-count : 1
+    region : "",
+    bucket-data : [
+      {
+        bucket-name : "",
+        bucket-count : 0
+      },
+      {
+        bucket-name : "",
+        bucket-count : 0
+      }
+    ]
   }
 }
